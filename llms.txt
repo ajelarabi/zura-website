@@ -13,7 +13,7 @@ ZURA sells one product: a 50ml bottle of pure Argania Spinosa Kernel Oil (Morocc
 - Processing: Cold-pressed, unrefined
 - Shelf life: 24 months from press date
 - Retail price: $60 USD
-- Wholesale price range for clinics: $50-$60 USD
+- Clinic retail range: $55-$60 USD. Wholesale unit pricing is tiered by order volume and provided directly to approved clinics after application; it is not published publicly.
 - Purchase: https://www.zura.beauty/#product
 
 ## Who it's for
@@ -25,6 +25,7 @@ ZURA sells one product: a 50ml bottle of pure Argania Spinosa Kernel Oil (Morocc
 ## Company
 
 - Legal name: Morocco Trade Group LLC
+- Founder: AJ El Arabi
 - Contact: aj@zura.beauty
 - Website: https://www.zura.beauty
 

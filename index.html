@@ -1200,4 +1200,74 @@
     ]
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ZURA",
+    "legalName": "Morocco Trade Group LLC",
+    "url": "https://www.zura.beauty",
+    "logo": "https://www.zura.beauty/brand_assets/zuralogo_nobkd.png",
+    "email": "aj@zura.beauty",
+    "description": "ZURA produces single-ingredient, cold-pressed Moroccan argan oil for aesthetic and corrective clinics, batch-traceable and ISO 22716 certified.",
+    "sameAs": []
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "ZURA Moroccan Argan Oil",
+    "image": "https://www.zura.beauty/brand_assets/zuraproductpackaging.png",
+    "description": "Single-ingredient, cold-pressed Moroccan argan oil. 50ml airless pump. Batch-traceable, ISO 22716 certified. Built for aesthetic and corrective clinics.",
+    "sku": "ZURA-ARG-50ML",
+    "brand": {
+      "@type": "Brand",
+      "name": "ZURA"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Morocco Trade Group LLC"
+    },
+    "countryOfOrigin": "Morocco",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.zura.beauty/#product",
+      "priceCurrency": "USD",
+      "price": "60.00",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "businessDays": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+          },
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 4,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+      }
+    }
+  }
+  </script>
 </body>

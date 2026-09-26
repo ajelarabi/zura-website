@@ -1,0 +1,1041 @@
+<title>ZURA &middot; Clinical-Grade Moroccan Argan Oil</title>
+<meta name="description" content="Single-ingredient, cold-pressed Moroccan argan oil. Batch-traceable, ISO 22716 certified. Built for aesthetic and corrective clinics." />
+<link rel="icon" href="brand_assets/zuralogo_nobkd.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root{
+    --ink:#17140F;
+    --ink-soft:#57524B;
+    --ink-faint:#8A8479;
+    --paper:#FBF9F5;
+    --paper-deep:#F1EAD9;
+    --white:#FFFFFF;
+    --gold:#AE7E33;
+    --gold-deep:#8A6426;
+    --gold-pale:#E7D9BC;
+    --line:#E2DACB;
+    --line-strong:#CFC5AF;
+    --dark:#141210;
+    --dark-line:rgba(251,249,245,0.14);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  .mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; }
+
+  ::selection{ background:var(--gold); color:var(--white); }
+
+  a, button{ -webkit-tap-highlight-color:transparent; }
+
+  :focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  .section{
+    padding-top:6rem;
+    padding-bottom:6rem;
+  }
+  @media (min-width:1024px){
+    .section{ padding-top:9rem; padding-bottom:9rem; }
+  }
+
+  .wrap{
+    max-width:1240px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
+  @media (min-width:768px){
+    .wrap{ padding-left:2.5rem; padding-right:2.5rem; }
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+    font-weight:500;
+  }
+
+  h1,h2,h3{
+    font-family:'IBM Plex Sans', sans-serif;
+    letter-spacing:-0.025em;
+    color:var(--ink);
+  }
+
+  .h-display{
+    font-size:2.6rem;
+    line-height:1.06;
+    font-weight:600;
+    letter-spacing:-0.03em;
+  }
+  @media (min-width:768px){
+    .h-display{ font-size:3.9rem; }
+  }
+  @media (min-width:1200px){
+    .h-display{ font-size:4.6rem; }
+  }
+
+  .h-section{
+    font-size:1.9rem;
+    line-height:1.12;
+    font-weight:600;
+    letter-spacing:-0.025em;
+  }
+  @media (min-width:768px){
+    .h-section{ font-size:2.6rem; }
+  }
+
+  .body-lg{
+    font-size:1.08rem;
+    line-height:1.7;
+    color:var(--ink-soft);
+  }
+
+  .body-md{
+    font-size:0.98rem;
+    line-height:1.7;
+    color:var(--ink-soft);
+  }
+
+  .hairline{ border-color:var(--line); }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    font-weight:500;
+    padding:0.95rem 1.6rem;
+    border-radius:2px;
+    transition:transform 0.35s cubic-bezier(.16,1,.3,1), background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+    white-space:nowrap;
+  }
+  .btn:active{ transform:scale(0.97); }
+
+  .btn-primary{
+    background:var(--ink);
+    color:var(--paper);
+    border:1px solid var(--ink);
+  }
+  .btn-primary:hover{
+    background:var(--gold-deep);
+    border-color:var(--gold-deep);
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px -12px rgba(138,100,38,0.55);
+  }
+
+  .btn-ghost{
+    background:transparent;
+    color:var(--ink);
+    border:1px solid var(--ink);
+  }
+  .btn-ghost:hover{
+    border-color:var(--gold-deep);
+    color:var(--gold-deep);
+    transform:translateY(-2px);
+  }
+
+  .btn-on-dark{
+    background:var(--gold);
+    color:var(--dark);
+    border:1px solid var(--gold);
+  }
+  .btn-on-dark:hover{
+    background:var(--gold-pale);
+    border-color:var(--gold-pale);
+    transform:translateY(-2px);
+    box-shadow:0 10px 26px -12px rgba(231,217,188,0.35);
+  }
+
+  .btn-ghost-dark{
+    background:transparent;
+    color:var(--paper);
+    border:1px solid var(--dark-line);
+  }
+  .btn-ghost-dark:hover{
+    border-color:var(--gold-pale);
+    color:var(--gold-pale);
+    transform:translateY(-2px);
+  }
+
+  /* ---------- Nav ---------- */
+  #site-nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(251,249,245,0.94);
+    border-bottom:1px solid transparent;
+    transition:border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  #site-nav.is-scrolled{
+    border-bottom-color:var(--line);
+    box-shadow:0 8px 24px -20px rgba(23,20,15,0.4);
+  }
+  .nav-link{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    position:relative;
+    padding-bottom:2px;
+  }
+  .nav-link::after{
+    content:"";
+    position:absolute;
+    left:0; right:100%;
+    bottom:0;
+    height:1px;
+    background:var(--gold-deep);
+    transition:right 0.3s cubic-bezier(.16,1,.3,1);
+  }
+  .nav-link:hover{ color:var(--ink); }
+  .nav-link:hover::after{ right:0; }
+
+  /* ---------- Reveal on scroll ---------- */
+  /* Content is visible by default (progressive enhancement). JS arms the
+     hidden state only once it has attached an IntersectionObserver, so a
+     slow script, no-JS, or a full-page screenshot never hides content. */
+  .reveal.reveal-armed{
+    opacity:0;
+    transform:translateY(22px);
+    transition:opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1);
+  }
+  .reveal.reveal-armed.is-visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .reveal-stagger.is-visible > *{ transition-delay:calc(var(--i, 0) * 90ms); }
+
+  /* ---------- Hero backdrop ---------- */
+  .hero-field{
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(58% 50% at 82% 18%, rgba(174,126,51,0.10), transparent 70%),
+      radial-gradient(45% 40% at 10% 90%, rgba(174,126,51,0.06), transparent 70%);
+    pointer-events:none;
+  }
+
+  /* Specimen frame: floats a transparent product cutout inside a measured
+     viewport (corner ticks + faint lab grid + a grounding contact shadow)
+     instead of boxing it in a solid card. */
+  .hero-frame{
+    position:relative;
+  }
+  .frame-grid{
+    position:absolute;
+    inset:9%;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(23,20,15,0.055) 0 1px, transparent 1px 32px),
+      repeating-linear-gradient(90deg, rgba(23,20,15,0.055) 0 1px, transparent 1px 32px);
+    pointer-events:none;
+    z-index:0;
+  }
+  .frame-shadow{
+    position:absolute;
+    left:50%;
+    bottom:6%;
+    width:52%;
+    height:18px;
+    transform:translateX(-50%);
+    background:radial-gradient(ellipse at center, rgba(23,20,15,0.30) 0%, rgba(23,20,15,0.10) 55%, transparent 78%);
+    filter:blur(3px);
+    pointer-events:none;
+    z-index:0;
+  }
+  .tick-corner-tl, .tick-corner-tr, .tick-corner-bl, .tick-corner-br{
+    position:absolute;
+    width:14px; height:14px;
+    pointer-events:none;
+    z-index:2;
+  }
+  .tick-corner-tl{ top:0; left:0; border-top:1.5px solid var(--ink); border-left:1.5px solid var(--ink); }
+  .tick-corner-tr{ top:0; right:0; border-top:1.5px solid var(--ink); border-right:1.5px solid var(--ink); }
+  .tick-corner-bl{ bottom:0; left:0; border-bottom:1.5px solid var(--ink); border-left:1.5px solid var(--ink); }
+  .tick-corner-br{ bottom:0; right:0; border-bottom:1.5px solid var(--ink); border-right:1.5px solid var(--ink); }
+
+  .callout{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.66rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+  .callout .dot{
+    width:5px; height:5px;
+    border-radius:50%;
+    background:var(--gold);
+    flex-shrink:0;
+  }
+  .callout .leader{
+    height:1px;
+    background:var(--line-strong);
+  }
+  .callout.left{ flex-direction:row-reverse; text-align:right; }
+  .callout.left .leader{ order:2; }
+
+  /* ---------- Ticker ---------- */
+  .ticker-track{
+    display:flex;
+    width:max-content;
+    animation:ticker 34s linear infinite;
+  }
+  @keyframes ticker{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-50%); }
+  }
+  .ticker-item{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    letter-spacing:0.05em;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    padding:0 1.75rem;
+    display:flex;
+    align-items:center;
+    gap:1.75rem;
+  }
+  .ticker-item .sep{ color:var(--line-strong); }
+
+  /* ---------- Comparison table ---------- */
+  .cmp-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--line);
+  }
+  .cmp-cell{
+    background:var(--paper);
+    padding:1.1rem 1.3rem;
+    display:flex;
+    align-items:flex-start;
+    gap:0.75rem;
+    font-size:0.94rem;
+    line-height:1.55;
+  }
+  .cmp-cell.zura{ background:var(--white); color:var(--ink); font-weight:500; }
+  .cmp-cell.typical{ color:var(--ink-soft); }
+  .cmp-icon{ flex-shrink:0; margin-top:2px; }
+
+  /* ---------- Protocol cards ---------- */
+  .protocol-card{
+    border:1px solid var(--line);
+    background:var(--white);
+    padding:1.9rem;
+    transition:transform 0.4s cubic-bezier(.16,1,.3,1), border-color 0.3s ease, box-shadow 0.4s ease;
+  }
+  .protocol-card:hover{
+    transform:translateY(-4px);
+    border-color:var(--gold);
+    box-shadow:0 20px 40px -28px rgba(23,20,15,0.35);
+  }
+
+  /* ---------- Badges ---------- */
+  .badge{
+    display:flex;
+    align-items:center;
+    gap:0.7rem;
+    border:1px solid var(--line);
+    background:var(--white);
+    padding:1rem 1.2rem;
+  }
+  .badge .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--ink);
+    line-height:1.4;
+  }
+
+  /* ---------- COA card ---------- */
+  .coa-card{
+    background:var(--white);
+    border:1px solid var(--line-strong);
+    position:relative;
+  }
+  .coa-header{
+    border-bottom:1px dashed var(--line-strong);
+  }
+  .coa-row{
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+    padding:0.7rem 0;
+    border-bottom:1px solid var(--line);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+  }
+  .coa-row:last-child{ border-bottom:none; }
+  .coa-row .k{ color:var(--ink-faint); letter-spacing:0.03em; }
+  .coa-row .v{ color:var(--ink); font-weight:500; text-align:right; }
+  .coa-pass{
+    color:var(--gold-deep);
+    font-weight:600;
+  }
+
+  .seal{
+    width:88px; height:88px;
+    border-radius:50%;
+    border:1px solid var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    flex-shrink:0;
+  }
+  .seal::before{
+    content:"";
+    position:absolute;
+    inset:6px;
+    border:1px solid var(--gold-pale);
+    border-radius:50%;
+  }
+  .seal-text{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.52rem;
+    letter-spacing:0.1em;
+    color:var(--gold-deep);
+    text-align:center;
+    line-height:1.5;
+  }
+
+  /* ---------- Product section ---------- */
+  .spec-row{
+    display:flex;
+    justify-content:space-between;
+    padding:0.85rem 0;
+    border-bottom:1px solid var(--line);
+    gap:1rem;
+  }
+  .spec-row:first-child{ padding-top:0; }
+  .spec-row .k{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    padding-top:0.15rem;
+  }
+  .spec-row .v{ font-size:0.98rem; color:var(--ink); text-align:right; font-weight:500; }
+
+  /* ---------- Dark section ---------- */
+  .dark-section{
+    background:var(--dark);
+    color:var(--paper);
+    position:relative;
+    overflow:hidden;
+  }
+  .lattice{
+    position:absolute;
+    inset:0;
+    opacity:0.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23E7D9BC' stroke-width='1'%3E%3Cpath d='M42 4 L58 20 L42 36 L26 20 Z'/%3E%3Cpath d='M42 48 L58 64 L42 80 L26 64 Z'/%3E%3Cpath d='M4 42 L20 26 L36 42 L20 58 Z'/%3E%3Cpath d='M48 42 L64 26 L80 42 L64 58 Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size:84px 84px;
+    pointer-events:none;
+  }
+
+  .field-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--gold-pale);
+    display:block;
+    margin-bottom:0.5rem;
+  }
+
+  .field{
+    width:100%;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid var(--dark-line);
+    color:var(--paper);
+    padding:0.7rem 0.1rem;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:0.95rem;
+    transition:border-color 0.25s ease;
+  }
+  .field::placeholder{ color:rgba(251,249,245,0.32); }
+  .field:focus{ outline:none; border-bottom-color:var(--gold); }
+
+  /* Mobile nav */
+  #mobile-menu{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s cubic-bezier(.16,1,.3,1);
+  }
+  #mobile-menu.is-open{ max-height:400px; }
+
+  .hamburger span{
+    display:block;
+    width:20px;
+    height:1px;
+    background:var(--ink);
+    transition:transform 0.3s ease, opacity 0.3s ease;
+  }
+  .hamburger span + span{ margin-top:5px; }
+  .hamburger.is-open span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+  .hamburger.is-open span:nth-child(2){ opacity:0; }
+  .hamburger.is-open span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+</style>
+
+<body class="antialiased">
+
+  <!-- ============ NAV ============ -->
+  <header id="site-nav">
+    <div class="wrap flex items-center justify-between h-[96px]">
+      <a href="#top" class="flex items-center gap-3 shrink-0">
+        <img src="brand_assets/zuralogo_nobkd.png" alt="ZURA" class="h-[68px] w-auto" />
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="#standards" class="nav-link">Standards</a>
+        <a href="#protocols" class="nav-link">Where It Fits</a>
+        <a href="#product" class="nav-link">Product</a>
+        <a href="#wholesale" class="nav-link">Wholesale</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="#product" class="btn btn-ghost">Shop Retail</a>
+        <a href="#wholesale" class="btn btn-primary">Apply for Wholesale Access</a>
+      </div>
+
+      <button id="menu-toggle" class="hamburger lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hairline border-t">
+      <div class="wrap py-6 flex flex-col gap-5">
+        <a href="#standards" class="nav-link">Standards</a>
+        <a href="#protocols" class="nav-link">Where It Fits</a>
+        <a href="#product" class="nav-link">Product</a>
+        <a href="#wholesale" class="nav-link">Wholesale</a>
+        <div class="flex flex-col gap-3 pt-2">
+          <a href="#product" class="btn btn-ghost">Shop Retail</a>
+          <a href="#wholesale" class="btn btn-primary">Apply for Wholesale Access</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="relative pt-16 pb-0 lg:pt-20 overflow-hidden">
+      <div class="hero-field"></div>
+      <div class="wrap relative grid lg:grid-cols-[1.05fr_0.95fr] gap-14 lg:gap-10 items-center">
+
+        <div class="reveal is-visible">
+          <p class="eyebrow mb-6">Single-Ingredient &middot; Cold-Pressed &middot; Batch-Traceable</p>
+          <h1 class="h-display max-w-xl">Clinical-grade argan oil, built for corrective protocols.</h1>
+          <p class="body-lg mt-7 max-w-md">
+            One ingredient. No dilution, no fragrance, no filler. Cold-pressed and lab-tested for aesthetic and corrective clinics, now available direct.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mt-10">
+            <a href="#wholesale" class="btn btn-primary">Apply for Wholesale Access</a>
+            <a href="#product" class="btn btn-ghost">Shop Retail &middot; $60</a>
+          </div>
+        </div>
+
+        <div class="reveal is-visible relative" style="transition-delay:120ms">
+          <div class="hero-frame aspect-[2/3] max-w-[360px] mx-auto">
+            <span class="tick-corner-tl"></span><span class="tick-corner-tr"></span>
+            <span class="tick-corner-bl"></span><span class="tick-corner-br"></span>
+            <div class="frame-grid"></div>
+            <div class="frame-shadow"></div>
+            <div class="relative z-[1] w-full h-full overflow-hidden">
+              <img src="brand_assets/zuraproduct_nobkd.png" alt="ZURA Moroccan argan oil, 50ml airless pump bottle" class="w-full h-full object-contain p-9" />
+            </div>
+
+            <div class="callout hidden md:flex" style="top:14%; left:100%; margin-left:14px; width:150px;">
+              <span class="dot"></span><span class="leader" style="width:22px;"></span>
+              <span>Airless pump</span>
+            </div>
+            <div class="callout hidden md:flex" style="top:38%; left:100%; margin-left:14px; width:150px;">
+              <span class="dot"></span><span class="leader" style="width:22px;"></span>
+              <span>50ml &middot; 1.7 fl oz</span>
+            </div>
+            <div class="callout left hidden md:flex" style="top:62%; right:100%; margin-right:14px; width:160px;">
+              <span class="dot"></span><span class="leader" style="width:22px;"></span>
+              <span>Cold&#8209;pressed, unrefined</span>
+            </div>
+            <div class="callout left hidden md:flex" style="top:84%; right:100%; margin-right:14px; width:160px;">
+              <span class="dot"></span><span class="leader" style="width:22px;"></span>
+              <span>Batch&#8209;traceable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticker -->
+      <div class="relative mt-16 lg:mt-24 border-t border-b hairline overflow-hidden bg-white/50">
+        <div class="ticker-track">
+          <div class="ticker-item">
+            <span>LOT 0417&#8209;MA</span><span class="sep">/</span>
+            <span>PRESS DATE 08.2026</span><span class="sep">/</span>
+            <span>OLEIC ACID 45.2%</span><span class="sep">/</span>
+            <span>PEROXIDE VALUE 1.8 MEQ/KG</span><span class="sep">/</span>
+            <span>ORIGIN 31.6295&deg;N, 7.9811&deg;W</span><span class="sep">/</span>
+            <span>ISO 22716 CERTIFIED</span><span class="sep">/</span>
+          </div>
+          <div class="ticker-item" aria-hidden="true">
+            <span>LOT 0417&#8209;MA</span><span class="sep">/</span>
+            <span>PRESS DATE 08.2026</span><span class="sep">/</span>
+            <span>OLEIC ACID 45.2%</span><span class="sep">/</span>
+            <span>PEROXIDE VALUE 1.8 MEQ/KG</span><span class="sep">/</span>
+            <span>ORIGIN 31.6295&deg;N, 7.9811&deg;W</span><span class="sep">/</span>
+            <span>ISO 22716 CERTIFIED</span><span class="sep">/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOT ALL ARGAN OIL IS EQUAL ============ -->
+    <section class="section">
+      <div class="wrap">
+        <div class="reveal max-w-2xl mb-14">
+          <p class="eyebrow mb-4">The Difference</p>
+          <h2 class="h-section">Not all argan oil is equal.</h2>
+          <p class="body-lg mt-5">
+            Most argan oil sold into clinics is refined, blended, and shipped with no documentation. ZURA is pressed, tested, and traced at every batch.
+          </p>
+        </div>
+
+        <div class="reveal border hairline">
+          <div class="cmp-row hairline border-b">
+            <div class="cmp-cell font-mono !py-4 text-xs tracking-wide uppercase" style="color:var(--ink-faint);">Typical Argan Oil</div>
+            <div class="cmp-cell font-mono !py-4 text-xs tracking-wide uppercase" style="color:var(--gold-deep); background:var(--white);">ZURA</div>
+          </div>
+
+          <div class="cmp-row">
+            <div class="cmp-cell typical">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Refined and deodorized, stripping natural actives
+            </div>
+            <div class="cmp-cell zura">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="var(--gold-deep)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Cold-pressed and unrefined, actives fully intact
+            </div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell typical">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Often oxidized before it reaches the shelf
+            </div>
+            <div class="cmp-cell zura">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="var(--gold-deep)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lab-tested for oxidation markers at every batch
+            </div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell typical">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              No certificate of analysis on request
+            </div>
+            <div class="cmp-cell zura">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="var(--gold-deep)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Batch-level COA provided with every order
+            </div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell typical">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Cut with fillers, silicones, or added fragrance
+            </div>
+            <div class="cmp-cell zura">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="var(--gold-deep)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Single ingredient. Nothing else added
+            </div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell typical" style="border-bottom:none;">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Origin unverified or blended across sources
+            </div>
+            <div class="cmp-cell zura" style="border-bottom:none;">
+              <svg class="cmp-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="var(--gold-deep)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Certified single-origin, Morocco
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHERE IT FITS ============ -->
+    <section id="protocols" class="section" style="background:var(--paper-deep); scroll-margin-top:96px;">
+      <div class="wrap">
+        <div class="reveal max-w-2xl mb-14">
+          <p class="eyebrow mb-4">Protocol Use Cases</p>
+          <h2 class="h-section">Where it fits.</h2>
+          <p class="body-lg mt-5">A single-ingredient oil clinics can build into existing protocols with no reformulation risk.</p>
+        </div>
+
+        <div class="reveal-stagger is-visible grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="protocol-card reveal is-visible" style="--i:0">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="mb-5"><path d="M13 3C13 3 6 9.5 6 15.5C6 19.6 9.1 23 13 23C16.9 23 20 19.6 20 15.5C20 9.5 13 3 13 3Z" stroke="var(--gold-deep)" stroke-width="1.4"/><path d="M9.5 16.5C9.5 18.5 11 20 13 20" stroke="var(--gold-deep)" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <h3 class="text-[1.02rem] font-semibold mb-2" style="letter-spacing:-0.01em;">Post-peel barrier support</h3>
+            <p class="body-md text-sm">Recovers lipid barrier function in the days following a chemical or enzyme peel.</p>
+          </div>
+
+          <div class="protocol-card reveal is-visible" style="--i:1">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="mb-5"><rect x="4" y="6" width="18" height="4.5" rx="0.5" stroke="var(--gold-deep)" stroke-width="1.4"/><rect x="4" y="11.5" width="18" height="4.5" rx="0.5" stroke="var(--gold-deep)" stroke-width="1.4"/><rect x="4" y="17" width="18" height="4.5" rx="0.5" stroke="var(--gold-deep)" stroke-width="1.4"/></svg>
+            <h3 class="text-[1.02rem] font-semibold mb-2" style="letter-spacing:-0.01em;">Post-microneedling calming layer</h3>
+            <p class="body-md text-sm">Reduces visible irritation and tightness in the hours after treatment.</p>
+          </div>
+
+          <div class="protocol-card reveal is-visible" style="--i:2">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="mb-5"><circle cx="13" cy="13" r="9.5" stroke="var(--gold-deep)" stroke-width="1.4"/><path d="M13 8.5V13L16 15.5" stroke="var(--gold-deep)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="text-[1.02rem] font-semibold mb-2" style="letter-spacing:-0.01em;">Compromised barrier recovery</h3>
+            <p class="body-md text-sm">Supports skin recovering from over-exfoliation, dehydration, or environmental stress.</p>
+          </div>
+
+          <div class="protocol-card reveal is-visible" style="--i:3">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="mb-5"><path d="M13 4C13 4 5 12.5 5 17.5C5 21.6 8.6 25 13 25" stroke="none"/><path d="M18 5.5C15 8.5 13 12 13 15.5C13 18 14.8 20 17.2 20C19.6 20 21 18 21 15.8C21 12.8 18 5.5 18 5.5Z" stroke="var(--gold-deep)" stroke-width="1.4"/><path d="M9 8.5C7 11 6 13.5 6 15.8C6 17.6 7.2 19 8.9 19" stroke="var(--gold-deep)" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <h3 class="text-[1.02rem] font-semibold mb-2" style="letter-spacing:-0.01em;">Acne-safe hydration</h3>
+            <p class="body-md text-sm">Non-comedogenic hydration that will not disrupt an active acne protocol.</p>
+          </div>
+
+          <div class="protocol-card reveal is-visible" style="--i:4">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="mb-5"><path d="M4 12L13 4L22 12V22H4V12Z" stroke="var(--gold-deep)" stroke-width="1.4" stroke-linejoin="round"/><path d="M10.5 22V15.5H15.5V22" stroke="var(--gold-deep)" stroke-width="1.3"/></svg>
+            <h3 class="text-[1.02rem] font-semibold mb-2" style="letter-spacing:-0.01em;">Professional retail add-on</h3>
+            <p class="body-md text-sm">A traceable, single-ingredient product clinics can retail alongside in-office treatment with confidence.</p>
+          </div>
+
+          <div class="protocol-card reveal is-visible flex flex-col justify-center" style="--i:5; background:var(--ink); border-color:var(--ink);">
+            <p class="mono text-xs tracking-wide uppercase mb-3" style="color:var(--gold-pale);">Not sure it fits your protocol?</p>
+            <a href="#wholesale" class="text-white text-[1.02rem] font-semibold inline-flex items-center gap-2 group" style="letter-spacing:-0.01em;">
+              Talk to us directly
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="transition-transform group-hover:translate-x-1"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLINICAL STANDARDS ============ -->
+    <section id="standards" class="section" style="scroll-margin-top:96px;">
+      <div class="wrap">
+        <div class="reveal max-w-2xl mb-14">
+          <p class="eyebrow mb-4">Clinical Standards &amp; Traceability</p>
+          <h2 class="h-section">Documented, not just claimed.</h2>
+          <p class="body-lg mt-5">Every batch is pressed, tested, and certified before it ships. Clinics can verify what they are retailing.</p>
+        </div>
+
+        <div class="reveal grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-16">
+          <div class="badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L17 5.5V10C17 14 14 17 10 18C6 17 3 14 3 10V5.5L10 2Z" stroke="var(--gold-deep)" stroke-width="1.3"/></svg>
+            <span class="label">ISO 22716<br/>GMP Certified</span>
+          </div>
+          <div class="badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 18C10 18 16 12.5 16 8C16 4.7 13.3 2 10 2C6.7 2 4 4.7 4 8C4 12.5 10 18 10 18Z" stroke="var(--gold-deep)" stroke-width="1.3"/><circle cx="10" cy="8" r="2.3" stroke="var(--gold-deep)" stroke-width="1.3"/></svg>
+            <span class="label">Certified<br/>Moroccan Origin</span>
+          </div>
+          <div class="badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 2H13V6.5L16 15C16.4 16.2 15.5 17.5 14.2 17.5H5.8C4.5 17.5 3.6 16.2 4 15L7 6.5V2Z" stroke="var(--gold-deep)" stroke-width="1.3"/><path d="M6 12H14" stroke="var(--gold-deep)" stroke-width="1.1"/></svg>
+            <span class="label">Batch-Level<br/>COA</span>
+          </div>
+          <div class="badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="0.5" stroke="var(--gold-deep)" stroke-width="1.3"/><path d="M6.5 8L9 10.5L14 5.5" stroke="var(--gold-deep)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="label">U.S. Cosmetic<br/>Compliant</span>
+          </div>
+        </div>
+
+        <div class="reveal grid lg:grid-cols-[1fr_1.15fr] gap-10 items-center">
+          <div>
+            <h3 class="text-xl font-semibold mb-4" style="letter-spacing:-0.02em;">Every batch, verified before it ships.</h3>
+            <p class="body-md mb-4">
+              Independent lab testing confirms oleic acid content, peroxide value, and moisture on every press run. Results are logged against the batch number printed on your bottle.
+            </p>
+            <p class="body-md">
+              Clinics can request the full certificate of analysis for any lot they carry.
+            </p>
+          </div>
+
+          <div class="coa-card p-6 md:p-8">
+            <div class="coa-header pb-5 mb-5 flex items-start justify-between gap-6">
+              <div>
+                <p class="mono text-[0.68rem] tracking-widest uppercase" style="color:var(--ink-faint);">Certificate of Analysis</p>
+                <p class="text-lg font-semibold mt-1" style="letter-spacing:-0.01em;">ZURA Moroccan Argan Oil</p>
+              </div>
+              <div class="seal">
+                <span class="seal-text">CERTIFIED<br/>ORIGIN<br/>MOROCCO</span>
+              </div>
+            </div>
+
+            <div class="coa-row"><span class="k">Batch No.</span><span class="v">0417&#8209;MA</span></div>
+            <div class="coa-row"><span class="k">Press Date</span><span class="v">08.2026</span></div>
+            <div class="coa-row"><span class="k">Origin</span><span class="v">Souss&#8209;Massa, Morocco</span></div>
+            <div class="coa-row"><span class="k">INCI</span><span class="v">Argania Spinosa Kernel Oil</span></div>
+            <div class="coa-row"><span class="k">Oleic Acid</span><span class="v">45.2%</span></div>
+            <div class="coa-row"><span class="k">Peroxide Value</span><span class="v">1.8 meq/kg</span></div>
+            <div class="coa-row"><span class="k">Moisture</span><span class="v">&lt; 0.1%</span></div>
+            <div class="coa-row"><span class="k">Result</span><span class="v coa-pass">PASS</span></div>
+
+            <p class="mono text-[0.66rem] mt-5 pt-4" style="color:var(--ink-faint); border-top:1px solid var(--line);">
+              Representative example. Full certificate of analysis provided with every batch on request.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT ============ -->
+    <section id="product" class="section" style="background:var(--paper-deep); scroll-margin-top:96px;">
+      <div class="wrap">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+          <div class="reveal grid grid-cols-2 gap-5">
+            <div class="hero-frame aspect-[2/3]">
+              <span class="tick-corner-tl"></span><span class="tick-corner-tr"></span>
+              <span class="tick-corner-bl"></span><span class="tick-corner-br"></span>
+              <div class="frame-grid"></div>
+              <div class="frame-shadow"></div>
+              <div class="relative z-[1] w-full h-full overflow-hidden">
+                <img src="brand_assets/zuraproduct_nobkd.png" alt="ZURA argan oil bottle" class="w-full h-full object-contain p-7" />
+              </div>
+            </div>
+            <div class="hero-frame aspect-[2/3] mt-8">
+              <span class="tick-corner-tl"></span><span class="tick-corner-tr"></span>
+              <span class="tick-corner-bl"></span><span class="tick-corner-br"></span>
+              <div class="frame-grid"></div>
+              <div class="frame-shadow"></div>
+              <div class="relative z-[1] w-full h-full overflow-hidden">
+                <img src="brand_assets/packaging_nobkg.png" alt="ZURA retail packaging box" class="w-full h-full object-contain p-7" />
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay:100ms">
+            <p class="eyebrow mb-4">The Product</p>
+            <h2 class="h-section mb-6">One SKU. No dilution.</h2>
+            <p class="body-lg mb-8 max-w-lg">
+              ZURA is offered in a single format: a 50ml airless pump that protects the oil from air and light from first use to last. There is no trial size. This is the same formulation sold to clinics.
+            </p>
+
+            <div class="mb-8">
+              <div class="spec-row"><span class="k">Format</span><span class="v">50ml Airless Pump</span></div>
+              <div class="spec-row"><span class="k">Origin</span><span class="v">Morocco</span></div>
+              <div class="spec-row"><span class="k">INCI</span><span class="v">Argania Spinosa Kernel Oil</span></div>
+              <div class="spec-row"><span class="k">Processing</span><span class="v">Cold&#8209;Pressed, Unrefined</span></div>
+              <div class="spec-row"><span class="k">Shelf Life</span><span class="v">12 Months From Press Date</span></div>
+            </div>
+
+            <div class="flex items-end justify-between flex-wrap gap-6 pt-2 border-t hairline">
+              <div class="pt-6">
+                <p class="mono text-xs uppercase tracking-wide" style="color:var(--ink-faint);">Retail Price</p>
+                <p class="text-4xl font-semibold mt-1" style="letter-spacing:-0.02em;">$60</p>
+              </div>
+              <a href="https://buy.stripe.com/REPLACE_WITH_ZURA_PAYMENT_LINK" class="btn btn-primary mt-6">Buy Now</a>
+            </div>
+            <p class="mono text-[0.7rem] mt-4" style="color:var(--ink-faint);">Ships in 2&ndash;4 business days. See shipping &amp; returns in the footer.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHOLESALE ============ -->
+    <section id="wholesale" class="dark-section section" style="scroll-margin-top:96px;">
+      <div class="lattice"></div>
+      <div class="wrap relative grid lg:grid-cols-[0.95fr_1.05fr] gap-16">
+
+        <div class="reveal">
+          <p class="eyebrow mb-4" style="color:var(--gold-pale);">Wholesale</p>
+          <h2 class="h-section" style="color:var(--paper);">Partner with ZURA.</h2>
+          <p class="mt-6 max-w-md" style="color:rgba(251,249,245,0.68); line-height:1.7; font-size:1.05rem;">
+            Clinics retail ZURA between $55 and $60. Approved partners receive wholesale pricing, batch documentation, and marketing support after a short application.
+          </p>
+
+          <div class="mt-10 space-y-5">
+            <div class="flex gap-4">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="mt-0.5 shrink-0"><path d="M3 9L7 13L15 4" stroke="var(--gold-pale)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="color:rgba(251,249,245,0.68); font-size:0.95rem; line-height:1.6;">Priority access to new batch documentation and COAs.</p>
+            </div>
+            <div class="flex gap-4">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="mt-0.5 shrink-0"><path d="M3 9L7 13L15 4" stroke="var(--gold-pale)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="color:rgba(251,249,245,0.68); font-size:0.95rem; line-height:1.6;">Protocol guidance and retail training for your team.</p>
+            </div>
+            <div class="flex gap-4">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="mt-0.5 shrink-0"><path d="M3 9L7 13L15 4" stroke="var(--gold-pale)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="color:rgba(251,249,245,0.68); font-size:0.95rem; line-height:1.6;">No public wholesale pricing. Terms are confirmed directly.</p>
+            </div>
+          </div>
+
+          <p class="mt-12 mono text-xs" style="color:rgba(251,249,245,0.45);">
+            Prefer to talk first? Email <a href="mailto:wholesale@zura.beauty" class="underline underline-offset-4" style="color:var(--gold-pale);">wholesale@zura.beauty</a>
+          </p>
+        </div>
+
+        <form id="wholesale-form" class="reveal" style="transition-delay:100ms">
+          <div class="grid sm:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="field-label" for="wf-name">Full name</label>
+              <input id="wf-name" name="name" type="text" required class="field" placeholder="Jordan Blake" />
+            </div>
+            <div>
+              <label class="field-label" for="wf-clinic">Clinic / practice name</label>
+              <input id="wf-clinic" name="clinic" type="text" required class="field" placeholder="Meridian Aesthetics" />
+            </div>
+            <div>
+              <label class="field-label" for="wf-email">Email</label>
+              <input id="wf-email" name="email" type="email" required class="field" placeholder="jordan@meridian.com" />
+            </div>
+            <div>
+              <label class="field-label" for="wf-phone">Phone</label>
+              <input id="wf-phone" name="phone" type="tel" class="field" placeholder="(555) 000-0000" />
+            </div>
+          </div>
+          <div class="mb-8">
+            <label class="field-label" for="wf-message">Tell us about your clinic</label>
+            <textarea id="wf-message" name="message" rows="3" class="field" placeholder="Clinic type, location, treatment volume"></textarea>
+          </div>
+          <button type="submit" class="btn btn-on-dark w-full sm:w-auto">Apply for Wholesale Access</button>
+          <p class="mono text-[0.68rem] mt-4" style="color:rgba(251,249,245,0.4);">Submitting opens your email client with these details prefilled to wholesale@zura.beauty.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="section !py-16" style="border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="grid md:grid-cols-[1.3fr_1fr_1fr_1fr] gap-12 pb-14 border-b hairline">
+        <div>
+          <img src="brand_assets/zuralogo_nobkd.png" alt="ZURA" class="h-9 w-auto mb-4" />
+          <p class="body-md text-sm max-w-[220px]">Clinical-grade Moroccan argan oil for corrective professionals.</p>
+        </div>
+        <div>
+          <p class="mono text-xs tracking-wide uppercase mb-4" style="color:var(--ink-faint);">Contact</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="mailto:hello@zura.beauty" class="hover:text-[var(--gold-deep)] transition-colors">hello@zura.beauty</a></li>
+            <li><a href="mailto:wholesale@zura.beauty" class="hover:text-[var(--gold-deep)] transition-colors">wholesale@zura.beauty</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mono text-xs tracking-wide uppercase mb-4" style="color:var(--ink-faint);">Policies</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-[var(--gold-deep)] transition-colors">Shipping &amp; Returns</a></li>
+            <li><a href="#" class="hover:text-[var(--gold-deep)] transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-[var(--gold-deep)] transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mono text-xs tracking-wide uppercase mb-4" style="color:var(--ink-faint);">Site</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#standards" class="hover:text-[var(--gold-deep)] transition-colors">Standards</a></li>
+            <li><a href="#protocols" class="hover:text-[var(--gold-deep)] transition-colors">Where It Fits</a></li>
+            <li><a href="#product" class="hover:text-[var(--gold-deep)] transition-colors">Product</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between gap-3 mono text-[0.72rem]" style="color:var(--ink-faint);">
+        <p>&copy; 2026 Morocco Trade Group LLC. All rights reserved.</p>
+        <p>ZURA&reg; &middot; Made in Morocco</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll shadow
+    const nav = document.getElementById('site-nav');
+    const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Mobile menu
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('#mobile-menu a').forEach((a) =>
+      a.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      })
+    );
+
+    // Reveal on scroll. Elements are visible by default in CSS; only once
+    // an observer is armed and watching do we hide-then-reveal them, so a
+    // slow script or a full-page capture never leaves content invisible.
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced && 'IntersectionObserver' in window) {
+      const revealEls = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+      );
+      revealEls.forEach((el) => {
+        el.classList.add('reveal-armed');
+        io.observe(el);
+      });
+      // Safety net: guarantee full visibility shortly after load even if an
+      // element's intersection event is ever missed (e.g. zero-height parent).
+      window.setTimeout(() => {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      }, 1200);
+    }
+
+    // Wholesale form -> mailto
+    const form = document.getElementById('wholesale-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name = data.get('name') || '';
+      const clinic = data.get('clinic') || '';
+      const email = data.get('email') || '';
+      const phone = data.get('phone') || '';
+      const message = data.get('message') || '';
+      const subject = encodeURIComponent(`Wholesale Application: ${clinic}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nClinic: ${clinic}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
+      );
+      window.location.href = `mailto:wholesale@zura.beauty?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>

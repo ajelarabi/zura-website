@@ -1,6 +1,22 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ZURA &middot; Clinical-Grade Moroccan Argan Oil</title>
 <meta name="description" content="Single-ingredient, cold-pressed Moroccan argan oil. Batch-traceable, ISO 22716 certified. Built for aesthetic and corrective clinics." />
-<link rel="icon" href="brand_assets/zuralogo_nobkd.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="brand_assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="brand_assets/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="brand_assets/favicon-180.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ZURA" />
+<meta property="og:title" content="ZURA &middot; Clinical-Grade Moroccan Argan Oil" />
+<meta property="og:description" content="Single-ingredient, cold-pressed Moroccan argan oil. Batch-traceable, ISO 22716 certified. Built for aesthetic and corrective clinics." />
+<meta property="og:image" content="https://www.zura.beauty/brand_assets/zuraproductpackaging.png" />
+<meta property="og:url" content="https://www.zura.beauty" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ZURA &middot; Clinical-Grade Moroccan Argan Oil" />
+<meta name="twitter:description" content="Single-ingredient, cold-pressed Moroccan argan oil. Batch-traceable, ISO 22716 certified. Built for aesthetic and corrective clinics." />
+<meta name="twitter:image" content="https://www.zura.beauty/brand_assets/zuraproductpackaging.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -900,7 +916,7 @@
           </p>
         </div>
 
-        <form id="wholesale-form" class="reveal" style="transition-delay:100ms">
+        <form id="wholesale-form" class="reveal" style="transition-delay:100ms" action="https://formspree.io/f/xoevkrgj" method="POST">
           <div class="grid sm:grid-cols-2 gap-6 mb-6">
             <div>
               <label class="field-label" for="wf-name">Full name</label>
@@ -923,8 +939,8 @@
             <label class="field-label" for="wf-message">Tell us about your clinic</label>
             <textarea id="wf-message" name="message" rows="3" class="field" placeholder="Clinic type, location, treatment volume"></textarea>
           </div>
-          <button type="submit" class="btn btn-on-dark w-full sm:w-auto">Apply for Wholesale Access</button>
-          <p class="mono text-[0.68rem] mt-4" style="color:rgba(251,249,245,0.4);">Submitting opens your email client with these details prefilled to aj@zura.beauty.</p>
+          <button type="submit" id="wf-submit" class="btn btn-on-dark w-full sm:w-auto">Apply for Wholesale Access</button>
+          <p id="wf-status" class="mono text-[0.68rem] mt-4" style="color:rgba(251,249,245,0.4);">We typically respond within 1&ndash;2 business days.</p>
         </form>
       </div>
     </section>
@@ -1020,21 +1036,34 @@
       }, 1200);
     }
 
-    // Wholesale form -> mailto
+    // Wholesale form -> Formspree
     const form = document.getElementById('wholesale-form');
-    form.addEventListener('submit', (e) => {
+    const submitBtn = document.getElementById('wf-submit');
+    const statusEl = document.getElementById('wf-status');
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const data = new FormData(form);
-      const name = data.get('name') || '';
-      const clinic = data.get('clinic') || '';
-      const email = data.get('email') || '';
-      const phone = data.get('phone') || '';
-      const message = data.get('message') || '';
-      const subject = encodeURIComponent(`Wholesale Application: ${clinic}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nClinic: ${clinic}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
-      );
-      window.location.href = `mailto:aj@zura.beauty?subject=${subject}&body=${body}`;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' },
+        });
+        if (response.ok) {
+          form.reset();
+          submitBtn.textContent = 'Application Sent';
+          statusEl.textContent = 'Thanks — we received your application and will be in touch within 1–2 business days.';
+          statusEl.style.color = 'var(--gold-pale)';
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Apply for Wholesale Access';
+        statusEl.textContent = 'Something went wrong. Please email us directly at aj@zura.beauty.';
+        statusEl.style.color = '#E29B9B';
+      }
     });
   </script>
 </body>

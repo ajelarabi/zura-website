@@ -200,6 +200,42 @@
     transform:translateY(-2px);
   }
 
+  /* ---------- FAQ ---------- */
+  .faq-item{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:1.1rem 1.4rem;
+  }
+  .faq-item summary{
+    cursor:pointer;
+    list-style:none;
+    font-weight:600;
+    font-size:1rem;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary::after{
+    content:"+";
+    font-family:'IBM Plex Mono', monospace;
+    font-size:1.2rem;
+    color:var(--gold-deep);
+    flex-shrink:0;
+    transition:transform 0.25s ease;
+  }
+  .faq-item[open] summary::after{ transform:rotate(45deg); }
+  .faq-item p{
+    margin-top:0.9rem;
+    color:var(--ink-soft);
+    font-size:0.95rem;
+    line-height:1.7;
+  }
+
   /* ---------- Nav ---------- */
   #site-nav{
     position:sticky;
@@ -542,6 +578,7 @@
         <a href="#protocols" class="nav-link">Where It Fits</a>
         <a href="#product" class="nav-link">Product</a>
         <a href="#wholesale" class="nav-link">Wholesale</a>
+        <a href="#faq" class="nav-link">FAQ</a>
       </nav>
 
       <div class="hidden lg:flex items-center gap-3">
@@ -560,6 +597,7 @@
         <a href="#protocols" class="nav-link">Where It Fits</a>
         <a href="#product" class="nav-link">Product</a>
         <a href="#wholesale" class="nav-link">Wholesale</a>
+        <a href="#faq" class="nav-link">FAQ</a>
         <div class="flex flex-col gap-3 pt-2">
           <a href="#product" class="btn btn-ghost">Shop Retail</a>
           <a href="#wholesale" class="btn btn-primary">Apply for Wholesale Access</a>
@@ -884,6 +922,43 @@
       </div>
     </section>
 
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section" style="background:var(--paper-deep); scroll-margin-top:96px;">
+      <div class="wrap max-w-3xl">
+        <div class="reveal mb-14">
+          <p class="eyebrow mb-4">FAQ</p>
+          <h2 class="h-section">Common questions.</h2>
+        </div>
+
+        <div class="reveal space-y-3">
+          <details class="faq-item">
+            <summary>Is argan oil safe to use after microneedling or chemical peels?</summary>
+            <p>Yes. ZURA is a single-ingredient, cold-pressed argan oil with no fragrance, dilution, or filler, which makes it well suited as a calming, barrier-supportive layer in the days following microneedling, peels, or other corrective treatments. As with any post-procedure product, patch-test first and follow your own clinical protocol.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What makes ZURA different from other argan oils?</summary>
+            <p>Most argan oil on the market is blended, refined, or has unverified origin. ZURA is single-origin Moroccan, cold-pressed and unrefined, and every batch is independently lab-tested for oleic acid content and peroxide value, with results traceable to the batch number printed on your bottle.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is ZURA non-comedogenic and safe for acne-prone skin?</summary>
+            <p>Yes. Argan oil is naturally non-comedogenic and can provide hydration without disrupting an active acne protocol. It's used by clinics as a lightweight, single-ingredient option alongside acne-focused treatment plans.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long does a bottle last?</summary>
+            <p>Each bottle is 50ml (1.7 fl oz) with an airless pump to preserve freshness. Shelf life is 24 months from the press date, which is printed on the batch label.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer wholesale pricing for clinics?</summary>
+            <p>Yes. Approved clinics and aesthetic professionals receive wholesale pricing, batch documentation, and retail training after a short application. See the <a href="#wholesale" style="color:var(--gold-deep); text-decoration:underline;">Wholesale</a> section below to apply.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where does ZURA ship, and what's your return policy?</summary>
+            <p>We currently ship within the United States, with orders going out 2&ndash;4 business days after purchase. Unopened, unused bottles can be returned within 30 days. Full details are in our <a href="shipping.html" style="color:var(--gold-deep); text-decoration:underline;">Shipping &amp; Returns policy</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ WHOLESALE ============ -->
     <section id="wholesale" class="dark-section section" style="scroll-margin-top:96px;">
       <div class="lattice"></div>
@@ -1068,4 +1143,61 @@
   </script>
 
   <script defer src="/_vercel/insights/script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is argan oil safe to use after microneedling or chemical peels?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ZURA is a single-ingredient, cold-pressed argan oil with no fragrance, dilution, or filler, which makes it well suited as a calming, barrier-supportive layer in the days following microneedling, peels, or other corrective treatments. As with any post-procedure product, patch-test first and follow your own clinical protocol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes ZURA different from other argan oils?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most argan oil on the market is blended, refined, or has unverified origin. ZURA is single-origin Moroccan, cold-pressed and unrefined, and every batch is independently lab-tested for oleic acid content and peroxide value, with results traceable to the batch number printed on your bottle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is ZURA non-comedogenic and safe for acne-prone skin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Argan oil is naturally non-comedogenic and can provide hydration without disrupting an active acne protocol. It's used by clinics as a lightweight, single-ingredient option alongside acne-focused treatment plans."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a bottle last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each bottle is 50ml (1.7 fl oz) with an airless pump to preserve freshness. Shelf life is 24 months from the press date, which is printed on the batch label."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer wholesale pricing for clinics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Approved clinics and aesthetic professionals receive wholesale pricing, batch documentation, and retail training after a short application."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does ZURA ship, and what's your return policy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We currently ship within the United States, with orders going out 2-4 business days after purchase. Unopened, unused bottles can be returned within 30 days."
+        }
+      }
+    ]
+  }
+  </script>
 </body>

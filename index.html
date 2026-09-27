@@ -920,7 +920,7 @@
               </div>
               <a href="https://buy.stripe.com/6oU4gz16z4Fxa3i29N3ZK04" class="btn btn-primary mt-6">Buy Now</a>
             </div>
-            <p class="mono text-[0.7rem] mt-4" style="color:var(--ink-faint);">Ships in 2&ndash;4 business days. See shipping &amp; returns in the footer.</p>
+            <p class="mono text-[0.7rem] mt-4" style="color:var(--ink-faint);">Free US shipping. Ships in 2&ndash;4 business days. See shipping &amp; returns in the footer.</p>
           </div>
 
         </div>
@@ -958,7 +958,7 @@
           </details>
           <details class="faq-item">
             <summary>Where does ZURA ship, and what's your return policy?</summary>
-            <p>We currently ship within the United States, with orders going out 2&ndash;4 business days after purchase. Unopened, unused bottles can be returned within 30 days. Full details are in our <a href="shipping.html" style="color:var(--gold-deep); text-decoration:underline;">Shipping &amp; Returns policy</a>.</p>
+            <p>We currently ship free within the United States, with orders going out 2&ndash;4 business days after purchase. Unopened, unused bottles can be returned within 30 days. Full details are in our <a href="shipping.html" style="color:var(--gold-deep); text-decoration:underline;">Shipping &amp; Returns policy</a>.</p>
           </details>
         </div>
       </div>
@@ -1214,7 +1214,7 @@
         "name": "Where does ZURA ship, and what's your return policy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We currently ship within the United States, with orders going out 2-4 business days after purchase. Unopened, unused bottles can be returned within 30 days."
+          "text": "We currently ship free within the United States, with orders going out 2-4 business days after purchase. Unopened, unused bottles can be returned within 30 days."
         }
       }
     ]
@@ -1261,6 +1261,11 @@
       "itemCondition": "https://schema.org/NewCondition",
       "shippingDetails": {
         "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
         "shippingDestination": {
           "@type": "DefinedRegion",
           "addressCountry": "US"

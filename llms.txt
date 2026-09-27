@@ -31,7 +31,7 @@ ZURA sells one product: a 50ml bottle of pure Argania Spinosa Kernel Oil (Morocc
 
 ## Pages
 
-- Homepage: https://www.zura.beauty/ — product info, clinical standards, protocol use cases, FAQ, wholesale application
+- Homepage: https://www.zura.beauty/: product info, clinical standards, protocol use cases, FAQ, wholesale application
 - Shipping & Returns: https://www.zura.beauty/shipping.html
 - Privacy Policy: https://www.zura.beauty/privacy.html
 - Terms of Service: https://www.zura.beauty/terms.html
